@@ -13,9 +13,6 @@ function getComputerChoice() {
     return choice;
 }
 
-const playerSelection = "SCISSORS";
-const computerSelection = getComputerChoice();
-console.log(computerSelection)
 
 function playGame(playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase();
@@ -38,4 +35,16 @@ function playGame(playerSelection, computerSelection) {
     }
 }
 
-console.log(playGame(playerSelection, computerSelection))
+
+function game() {
+
+    for (let i = 0; i < 5; i++) {
+        let playerSelection = prompt("Enter a value for Rock Paper Scissors: ");
+        playerSelection.toLowerCase();
+        
+        const computerSelection = getComputerChoice();
+        console.log(playGame(playerSelection, computerSelection))
+    }
+}
+
+console.log(game())
