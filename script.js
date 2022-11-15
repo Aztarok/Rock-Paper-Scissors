@@ -38,11 +38,9 @@ function playGame(playerSelection, computerSelection) {
 
 function game(e) {
     let playerSelection = e;
-    console.log(playerSelection);   
-    playerSelection.toLowerCase();
-    
     const computerSelection = getComputerChoice();
-    console.log(playGame(e, computerSelection))
+    
+    document.querySelector('.result').innerHTML = `${playGame(e, computerSelection)}`;
 }
 
 const button = document.querySelectorAll('.btn');
