@@ -36,15 +36,17 @@ function playGame(playerSelection, computerSelection) {
 }
 
 
-function game() {
-
-    for (let i = 0; i < 5; i++) {
-        let playerSelection = prompt("Enter a value for Rock Paper Scissors: ");
-        playerSelection.toLowerCase();
-        
-        const computerSelection = getComputerChoice();
-        console.log(playGame(playerSelection, computerSelection))
-    }
+function game(e) {
+    let playerSelection = e;
+    console.log(playerSelection);   
+    playerSelection.toLowerCase();
+    
+    const computerSelection = getComputerChoice();
+    console.log(playGame(e, computerSelection))
 }
 
-console.log(game())
+const button = document.querySelectorAll('.btn');
+button.forEach(button => button.addEventListener('click', (e) => {
+    let value = button.dataset.name;
+    game(value);
+}));
