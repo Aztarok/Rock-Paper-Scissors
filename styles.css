@@ -1,0 +1,42 @@
+#container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.btns {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+    width: 100vw;
+}
+
+.btn {
+    padding: 40px 80px;
+    font-size: 24px;
+}
+
+.output {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.scores {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.player-score {
+    margin-top: 20px;
+}
+
+.result {
+    width: 20vw;
+}
